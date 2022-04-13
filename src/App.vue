@@ -1,16 +1,7 @@
 <template>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Vue App: Garza Rest...</title>
-    </head>
-    <body>
-      <NavBar></NavBar>
-    </body>
-  </html>
+      <NavBar>
+      </NavBar>
 </template>
 
 <script>
@@ -21,7 +12,7 @@ import NavBar from './components/Navbar.vue'
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
   }
 }
 </script>
