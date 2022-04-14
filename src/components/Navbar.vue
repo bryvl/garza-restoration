@@ -31,7 +31,7 @@
         justify-content: center;
         width: 100%;
         height: 150px;
-        padding: 2.5%;
+        padding: 2%;
         position: sticky;
         top: 0;
         z-index: 999;

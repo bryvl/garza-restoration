@@ -12,8 +12,8 @@
             <a href="#services" class="navbarLinks" id="servicesPage">Services</a>
             <!-- <div class="gradientBorder"></div> -->
         </li>
-        <li class="navbarBtn">
-            <a href="#signUp" class="button" id="signUp">Sign Up</a>
+        <li class="navbarItem">
+            <a href="#gallery" class="navbarLinks" id="gallery">Gallery</a>
             <!-- <div class="gradientBorder"></div> -->
         </li>
     </ul>
@@ -27,11 +27,21 @@
     .navbarMenu {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 3% auto;
+        margin: 2% auto;
         list-style: none;
+    }
+
+    .navbarItem:first-child {
+        border-left: 1px solid #777;
     }
     .navbarItem {
         display: inline;
+        border-right: 1px solid #777;
+        padding: 2px;
+    }
+    .navbarItem:hover {
+        background-color: #444;
+        transition: 0.5s ease;
     }
     .navbarMenu li a {
         justify-content: center;

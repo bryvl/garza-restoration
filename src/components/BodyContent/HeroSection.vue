@@ -53,8 +53,9 @@ export default {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        padding: 2.5%;
+        padding: 0;
         color: #fff;
+        background-image: url('/Users/bryanvalencia/Documents/shepherd-pie/garza-restoration/src/assets/images/stockKitchenPhoto.jpeg');
     }
     .heroHeading {
         display: flex;
@@ -62,19 +63,25 @@ export default {
         margin-bottom: 24px;
         color: #fff;
     }
+    .heroLeftSide {
+        background-color: rgb(143, 26, 40, .85);
+        height: 100%;
+        padding: 25% 2.5%;
+    }
     .heroRightSide {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 90%;
+        height: 100%;
         padding: 0 auto;
+        background-color: rgba(255, 255, 255, .0);
     }
     .contactFormContainer {
         width: 400px;
         height: 450px;
-        background-color: #fff;
-        border: 1px dashed #aaa;
+        border: 1px solid #ddd;
         border-radius: 5px;
+        background-color: #fff;
         color: #5f1a28;
     }
     .contactFormHeading {

@@ -3,6 +3,11 @@
     <div class="pageContent">
       <NavBar></NavBar>
       <HeroSection/>
+      <AboutSection/>
+      <!-- ServiceSection -->
+      <!-- ReviewSection -->
+      <!-- Maybe Google Maps Location -->
+      <!-- Footer -->
     </div>
 </template>
 
@@ -11,12 +16,14 @@
 
 import NavBar from './components/Navbar.vue'
 import HeroSection from './components/BodyContent/HeroSection.vue'
+import AboutSection from './components/BodyContent/AboutSection'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    HeroSection
+    HeroSection,
+    AboutSection
   }
 }
 </script>
@@ -32,6 +39,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #777;
   color: #2c3e50;
   margin: 0;
 }
