@@ -4,7 +4,7 @@
       <NavBar></NavBar>
       <HeroSection/>
       <AboutSection/>
-      <!-- ServiceSection -->
+      <ServiceSection/>
       <!-- ReviewSection -->
       <!-- Maybe Google Maps Location -->
       <!-- Footer -->
@@ -17,13 +17,15 @@
 import NavBar from './components/Navbar.vue'
 import HeroSection from './components/BodyContent/HeroSection.vue'
 import AboutSection from './components/BodyContent/AboutSection'
+import ServiceSection from './components/BodyContent/ServiceSection'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     HeroSection,
-    AboutSection
+    AboutSection,
+    ServiceSection
   }
 }
 </script>

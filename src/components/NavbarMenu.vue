@@ -31,13 +31,13 @@
         list-style: none;
     }
 
-    .navbarItem:first-child {
-        border-left: 1px solid #777;
-    }
     .navbarItem {
         display: inline;
         border-right: 1px solid #777;
         padding: 2px;
+    }
+    .navbarItem:last-child {
+        border-right: none;
     }
     .navbarItem:hover {
         background-color: #444;

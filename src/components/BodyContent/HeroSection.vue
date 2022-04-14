@@ -43,13 +43,13 @@ export default {
 }
 </script>
 <style scoped>
-    .hero {
+    /* .hero {
         background: #8f1a28;
-    }
+    } */
     .heroContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 600px;
+        height: 750px;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
