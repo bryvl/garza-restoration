@@ -29,12 +29,12 @@ export default {
     align-items: center;
     font-size: 3rem;
     font-weight: 900;
-    color: #5f1a28;
+    color: #292929;
 }
 .aboutUsDescription {
     margin: auto;
     text-align: center;
-    color: #666;
+    color: #777;
     font-size: 1.15rem;
 }
 

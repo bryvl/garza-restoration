@@ -7,7 +7,7 @@
       <ServiceSection/>
       <!-- ReviewSection -->
       <!-- Maybe Google Maps Location -->
-      <!-- Footer -->
+      <FooterSection/>
     </div>
 </template>
 
@@ -18,6 +18,7 @@ import NavBar from './components/Navbar.vue'
 import HeroSection from './components/BodyContent/HeroSection.vue'
 import AboutSection from './components/BodyContent/AboutSection'
 import ServiceSection from './components/BodyContent/ServiceSection'
+import FooterSection from './components/Footer'
 
 export default {
   name: 'App',
@@ -25,7 +26,8 @@ export default {
     NavBar,
     HeroSection,
     AboutSection,
-    ServiceSection
+    ServiceSection,
+    FooterSection
   }
 }
 </script>

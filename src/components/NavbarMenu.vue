@@ -34,18 +34,18 @@
     .navbarItem {
         display: inline;
         border-right: 1px solid #777;
-        padding: 2px;
+        padding: 5px;
     }
     .navbarItem:last-child {
         border-right: none;
     }
     .navbarItem:hover {
-        background-color: #444;
-        transition: 0.5s ease;
+        background-color: #e0e0e0;
+        transition: 0.65s ease;
     }
     .navbarMenu li a {
         justify-content: center;
         text-decoration: none;
-        color: #fff;
+        color: #333;
     }
 </style>

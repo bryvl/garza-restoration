@@ -35,9 +35,9 @@
         position: sticky;
         top: 0;
         z-index: 999;
-        background-color: #333;
-        border-bottom: 2px solid #555;
-        color: white;
+        background-color: #fff;
+        border-bottom: 1px solid #999;
+        color: #333;
     }
     .navbarRightSide {
         display: grid;

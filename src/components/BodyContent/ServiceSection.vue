@@ -53,6 +53,9 @@ export default {
         background-color: #f2eaea;
         font-size: 1.25rem;
 }
+.serviceSectionHeader {
+    color: #5f1a28;
+}
     .serviceSectionCardContainer {
         width: 100%;
         /* display: grid;
@@ -68,10 +71,11 @@ export default {
         border-radius: 10px;
         padding: 25px 10px 10px 10px;
         margin: 0 25px;
-        color: #393939;
+        color: #292929;
     }
     .serviceCard p{
         font-size: 14px;
+        color: #777;
     }
     .serviceCard a {
         font-size: .75rem;

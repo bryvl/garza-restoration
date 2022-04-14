@@ -1,5 +1,7 @@
 <template>
-    <div class="tempLogo"></div>
+    <div class="tempLogo">
+        <img src="../assets/images/GarzaLogo.jpeg" alt="Garza Restoration Logo. A red house with the company name around it" height="125" width="125">
+    </div>
 </template>
 <script>
     export default {
@@ -10,8 +12,6 @@
     .tempLogo {
         display: flex;
         justify-content: flex-start;
-        height: 75px;
-        width: 75px;
-        background-color: #8f1a28;
+        margin-left: 25px;
     }
 </style>
