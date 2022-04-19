@@ -4,7 +4,7 @@
       <NavBar></NavBar>
       <HeroSection/>
       <AboutSection/>
-      <ServiceSection/>
+      <ServiceSection />
       <!-- ReviewSection -->
       <!-- Maybe Google Maps Location -->
       <FooterSection/>
@@ -18,6 +18,7 @@ import NavBar from './components/Navbar.vue'
 import HeroSection from './components/BodyContent/HeroSection.vue'
 import AboutSection from './components/BodyContent/AboutSection'
 import ServiceSection from './components/BodyContent/ServiceSection'
+// import ServiceCard from './components/BodyContent/ServiceSectionComponents/ServiceCard';
 import FooterSection from './components/Footer'
 
 export default {
@@ -27,6 +28,7 @@ export default {
     HeroSection,
     AboutSection,
     ServiceSection,
+    // ServiceCard,
     FooterSection
   }
 }

@@ -4,45 +4,49 @@
             <h1>Check Out Our Services:</h1>
         </div>
         <div class="serviceSectionCardContainer">
-            <div class="serviceCard kitchenCard">
-                <div class="cardIconHeading">
-                    <i class="fa-solid fa-sink"></i>
-                </div>
-                <h3>Kitchen Remodeling</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.
-                </p>
-                <a href="#">LEARN MORE >>></a>
-            </div>
-            <div class="serviceCard bathCard">
-                <div class="cardIconHeading">
-                    <i class="fa-solid fa-toilet"></i>
-                </div>
-                <h3>Bathroom Remodeling</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. 
-                </p>
-                <a href="#">LEARN MORE >>></a>
-            </div>
-            <div class="serviceCard waterRestorationCard">
-                <div class="cardIconHeading">
-                    <i class="fa-solid fa-water"></i>
-                </div>
-                <h3>Water Damage Restoration</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. 
-                </p>
-                <a href="#">LEARN MORE >>></a>
-            </div>
+            <ServiceCard
+                v-for="card in cards"
+                :key=card.id
+                :serviceTypeTitle="card.title"
+                :serviceDescription="card.description"
+                :serviceTypeIcon="card.iconClasses"
+            />
+            <!-- Add v-if <div> to serviceSectionCardContainer for expanded content-->
         </div>
     </div>
 </template>
 <script>
+import ServiceCard from './ServiceSectionComponents/ServiceCard';
+
 export default {
-    name: 'ServiceSection'
+    name: 'ServiceSection',
+    components: { 
+        ServiceCard
+     },
+    data () {
+        return {
+            cards: [
+                {
+                    id: 1,
+                    title: "Kitchen Remodeling",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.",
+                    iconClasses: "fa-solid fa-toilet"
+                },
+                {
+                    id: 2,
+                    title: "Bath Remodeling",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.",
+                    iconClasses: "fa-solid fa-sink"
+                },
+                {
+                    id: 3,
+                    title: "Water Damage Restoration",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.",
+                    iconClasses: "fa-solid fa-house-flood-water"
+                }
+            ]
+        }
+    }
 }
 </script>
 <style scoped>
@@ -52,38 +56,14 @@ export default {
         padding: 50px;
         background-color: #f2eaea;
         font-size: 1.25rem;
-}
-.serviceSectionHeader {
-    color: #5f1a28;
-}
+    }
+    .serviceSectionHeader {
+        color: #5f1a28;
+    }
     .serviceSectionCardContainer {
         width: 100%;
-        /* display: grid;
-        grid-template-columns: 1fr 1fr 1fr; */
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .serviceCard {
-        width: 300px;
-        height: 300px;
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 25px 10px 10px 10px;
-        margin: 0 25px;
-        color: #292929;
-    }
-    .serviceCard p{
-        font-size: 14px;
-        color: #777;
-    }
-    .serviceCard a {
-        font-size: .75rem;
-        text-decoration: none;
-        color: #8f1a28;
-    }
-    .cardIconHeading i {
-        font-size: 4rem;
-        color: #5f1a28;
     }
 </style>
